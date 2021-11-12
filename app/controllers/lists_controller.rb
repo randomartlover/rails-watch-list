@@ -17,10 +17,12 @@ class ListsController < ApplicationController
     end
   end
 
-  def show; end
+  def show
+    @banner_name = @list.name
+  end
 
   def list_params
-    params.require(:list).permit(:name)
+    params.require(:list).permit(:name, :image_url)
   end
 
   def set_list

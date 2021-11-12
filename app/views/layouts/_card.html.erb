@@ -1,0 +1,21 @@
+<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+  <div class="card-product">
+    <%= image_tag bookmark.movie.poster_url, alt: bookmark.movie.title, height: '100px'%>
+    <div class="card-product-infos">
+      <div class="d-flex align-items-center">
+        <h2><%= bookmark.movie.title %></h2>
+        <p>&nbsp;• <%= bookmark.movie.rating %><i class="fas fa-star icon-star"></i></p>
+      </div>
+      <p><%= bookmark.movie.overview %></p>
+      <div class="d-flex justify-content-between mt-3">
+        <p>
+          <i class="fas fa-quote-left"></i>
+          <strong> <%= bookmark.comment %></strong>
+        </p>
+        <%= link_to bookmark_path(bookmark), method: :delete, data: { confirm: 'Are you sure?'} do%>
+          <i class="fas fa-trash-alt icon-red"></i>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
