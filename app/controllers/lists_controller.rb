@@ -1,11 +1,16 @@
 class ListsController < ApplicationController
-  before_action :set_list, only: [:show]
+  before_action :set_list, only: [:show, :destroy]
   def index
     @lists = List.all
   end
 
   def new
     @list = List.new
+  end
+
+  def destroy
+    @list.destroy
+    redirect_to lists_path
   end
 
   def create

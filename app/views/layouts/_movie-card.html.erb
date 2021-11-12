@@ -4,9 +4,9 @@
     <div class="card-product-infos">
       <div class="d-flex align-items-center">
         <h2><%= bookmark.movie.title %></h2>
-        <p>&nbsp;• <%= bookmark.movie.rating %><i class="fas fa-star icon-star"></i></p>
+        <p class = "movie-rating-wrap">&nbsp;• <%= bookmark.movie.rating %><i class="fas fa-star icon-star"></i></p>
       </div>
-      <p><%= bookmark.movie.overview %></p>
+      <p class= "text-ellipsis mt-2"><%= bookmark.movie.overview %></p>
       <div class="d-flex justify-content-between mt-3">
         <p>
           <i class="fas fa-quote-left"></i>

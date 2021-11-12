@@ -1,7 +1,9 @@
-<%= simple_form_for(@list) do |f|%>
-  <%= f.input :name %>
-  <%= f.input :photo, as: :file %>
-  <div class="form-actions btn btn-dark rounded">
-    <%= f.button :submit, :class => 'text-white' %>
-  </div>
-<% end %>
+<div class="col-5 mx-auto mt-3">
+  <%= simple_form_for(@list) do |f|%>
+    <%= f.input :name %>
+    <%= f.input :photo, as: :file %>
+    <div class="form-actions btn btn-dark rounded">
+      <%= f.button :submit, :class => 'text-white' %>
+    </div>
+  <% end %>
+</div>

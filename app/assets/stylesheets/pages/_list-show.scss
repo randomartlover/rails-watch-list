@@ -1,3 +1,20 @@
 .icon-star {
   color: gold;
 }
+
+.text-ellipsis {
+  // height: 50px;
+  // overflow: hidden;
+  // text-overflow: ellipsis;
+  // white-space: nowrap;
+  // max-width: 100px;
+  display: -webkit-box;
+  max-width: 200px;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.movie-rating-wrap {
+  white-space: nowrap;
+}
